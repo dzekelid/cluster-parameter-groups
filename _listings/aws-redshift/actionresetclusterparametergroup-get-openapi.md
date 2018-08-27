@@ -1,9 +1,13 @@
+---
 swagger: "2.0"
 x-collection-name: AWS Redshift
-x-complete: 1
+x-complete: 0
 info:
-  title: AWS Redshift API
+  title: Amazon Redshift API Reset Cluster Parameter Group
   version: 1.0.0
+  description: |-
+    Sets one or more parameters of the specified parameter group to their default
+                values and sets the source values of the parameters to "engine-default".
 schemes:
 - http
 produces:
@@ -142,3 +146,17 @@ paths:
           description: OK
       tags:
       - Cluster Parameter Groups
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
